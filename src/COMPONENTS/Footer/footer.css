@@ -1,0 +1,6 @@
+.bloqueImgFooter {
+    display: flex;
+}
+.bloqueImgFooter img{
+    width: 100%;
+}

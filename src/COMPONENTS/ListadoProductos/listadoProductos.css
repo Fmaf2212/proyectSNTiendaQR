@@ -1,0 +1,42 @@
+.sectionListadoProductos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    padding: 20px;
+}
+.sectionListadoProductos article p.nameProduct{
+    font-size: .6em;
+    color: #8AAB04;
+    font-weight: 500;
+    text-align: center;
+    margin: 2.5px;
+}
+.sectionListadoProductos article p.priceProduct{
+    font-size: .8em;
+    color: #267130;
+    font-weight: bold;
+    text-align: center;
+    margin: 8px;
+}
+.sectionListadoProductos article div.bloqueImgProduct{
+    padding: 10px 0;
+    border: 1px solid #d7d7d7;
+}
+.sectionListadoProductos article div img{
+    width: 100%;
+}
+.sectionListadoProductos article div.bloqueBtnAñadirCarrito{
+    display: flex;
+    justify-content: center;
+}
+.sectionListadoProductos article div.bloqueBtnAñadirCarrito button{
+    background-color: #8AAB04;
+    border-radius: 15px;
+    color: white;
+    margin: auto;
+    border: none;
+    padding: 5px 7.5px;
+    font-size: .6em;
+    font-weight: bold;
+}

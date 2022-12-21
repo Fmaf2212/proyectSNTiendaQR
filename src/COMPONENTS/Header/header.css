@@ -1,0 +1,43 @@
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8AAB04;
+    padding: 0 20px;
+}
+header > nav img{
+    width: 50%;
+}
+header > nav div{
+    line-height: .8;
+}
+header > nav div a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+header > img{
+    width: 100%;
+}
+
+header > .headerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+header > .headerBottom input {
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 3px 6px;
+}
+header > .headerBottom a {
+    text-decoration: none;
+    color: #267130;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+header > .headerBottom img{
+    width: 10%;
+}
