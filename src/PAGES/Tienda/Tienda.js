@@ -10,6 +10,7 @@ import TuCarrito from '../../COMPONENTS/TuCarrito/TuCarrito'
 import Footer from '../../COMPONENTS/Footer/Footer'
 import Login from '../Login/Login'
 
+import '../../BASE/styleGeneral.css'
 
 const Tienda = () => {
   const location = useLocation()

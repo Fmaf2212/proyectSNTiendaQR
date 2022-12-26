@@ -5,6 +5,9 @@
     grid-row-gap: 20px;
     padding: 20px;
 }
+.sectionListadoProductos article a{
+    text-decoration: none;
+}
 .sectionListadoProductos article p.nameProduct{
     font-size: .6em;
     color: #8AAB04;
@@ -21,7 +24,7 @@
 }
 .sectionListadoProductos article div.bloqueImgProduct{
     padding: 10px 0;
-    border: 1px solid #d7d7d7;
+    border: 1px solid var(--second2-color);
 }
 .sectionListadoProductos article div img{
     width: 100%;

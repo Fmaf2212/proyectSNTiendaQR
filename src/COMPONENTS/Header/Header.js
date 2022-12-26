@@ -2,9 +2,10 @@ import React from 'react'
 
 import { Link, useNavigate } from 'react-router-dom'
 
-import carruselTienda from '../../BASE/img/carruselTienda.png'
-import carritoTienda from '../../BASE/img/carritoTienda.png'
-import logoSN from '../../BASE/img/logoSantaNaturaHeader.png'
+import home from '../../BASE/img/4-volver-a-inicio.png'
+import carruselTienda from '../../BASE/img/3-BANNER-EJEMPLO.png'
+import carritoTienda from '../../BASE/img/3-carrito-comprando.png'
+import logoSN from '../../BASE/img/3-LOGO-ENCABEZADO.png'
 
 import './header.css'
 
@@ -20,11 +21,9 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div>
-          <Link to="/">
-            Casita
-          </Link>
-        </div>
+        <Link to="/">
+          <img src={home} alt='home'/>
+        </Link>
         <img src={logoSN} alt='logoSN'/>
         <button onClick={() => clickLogin()} className="button">
           <div className="logout">Login</div>
@@ -34,7 +33,13 @@ const Header = () => {
       <div className='headerBottom'>
         <input placeholder='Encuentra tu producto'></input>
         <a href='https://www.youtube.com/'>¿Cómo comprar?</a>
-        <img src={carritoTienda} alt='carritoTienda' />
+        <div className='bloqueCarrito'>
+          <Link to="/TuCarrito">
+          <img src={carritoTienda} alt='carritoTienda' />
+          </Link>
+          <span>0</span>
+        </div>
+        {/* <img src={carritoTienda} alt='carritoTienda' /> */}
       </div>
     </header>
   )

@@ -1,0 +1,59 @@
+:root{
+    --primary-color: #8AAB04;
+    --primary2-color: #267130;
+    --second-color: #706f6f;
+    --second2-color: #bdcdbc;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../BASE/fonts/MyriadPro-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../BASE/fonts/Montserrat-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../BASE/fonts/Montserrat-MediumItalic.ttf');
+    font-style: italic;
+    font-weight: 500;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../BASE/fonts/Montserrat-SemiBold.otf'),
+    url('../BASE/fonts/Montserrat-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../BASE/fonts/Montserrat-Bold.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../BASE/fonts/Montserrat-ExtraBold.otf'),
+    url('../BASE/fonts/Montserrat-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../BASE/fonts/Montserrat-Black.ttf');
+    font-style: normal;
+    font-weight: 900;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+}

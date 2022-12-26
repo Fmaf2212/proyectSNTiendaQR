@@ -1,0 +1,119 @@
+.bloqueUbicacionPedido{
+    height: calc(100vh - 223px);
+}
+
+.bloqueIngresarUbicacion{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+.bloqueIngresarUbicacion > div:nth-child(1){
+    background-color: var(--second2-color);
+    border-radius: 15px 15px 0 0;
+    border: 1px solid var(--second2-color);
+    padding: 10px 20px;
+}
+.bloqueIngresarUbicacion > div:nth-child(1)>h2{
+    color: #fff;
+    margin: 0;
+    font-size: .8em;
+}
+.bloqueIngresarUbicacion > .bloqueMovilUbi,
+.bloqueIngresarUbicacion > .bloqueTiendaUbi{
+    border: 1px solid var(--second2-color);
+    display: flex;
+    padding: 15px 20px;
+    gap: 30px;
+    align-items: center;
+    transition: background-color .3s ease;
+}
+.bloqueIngresarUbicacion > .bloqueMovilUbi{
+    border-bottom: 0;
+}
+.bloqueIngresarUbicacion > .bloqueTiendaUbi{
+    border-top: 0;
+}
+.bloqueIngresarUbicacion > .bloqueMovilUbi.selected,
+.bloqueIngresarUbicacion > .bloqueTiendaUbi.selected{
+    background-color: var(--primary-color);
+}
+.bloqueIngresarUbicacion > .bloqueMovilUbi img,
+.bloqueIngresarUbicacion > .bloqueTiendaUbi img{
+    width: 15%;
+    object-fit: contain;
+}
+.bloqueIngresarUbicacion > .bloqueMovilUbi p,
+.bloqueIngresarUbicacion > .bloqueTiendaUbi {
+    font-size: 0.7em;
+    color: var(--second-color);
+    line-height: 1.1;
+    margin: 0;
+    transition: color .3s ease;
+}
+.bloqueIngresarUbicacion > .bloqueMovilUbi.selected p,
+.bloqueIngresarUbicacion > .bloqueTiendaUbi.selected {
+    color: #fff
+}
+.bloqueIngresarUbicacion > .bloqueTiendaUbi{
+    border: 1px solid var(--second2-color);
+    border-radius: 0 0 15px 15px;
+}
+.bloqueIngresarUbicacion > .bloqueTiendaUbi > div{
+    display: flex;
+    flex-direction: column;
+}
+.bloqueIngresarUbicacion > .bloqueTiendaUbi > div p{
+    margin: 0;
+}
+
+.bloqueIngresaDireccion{
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+}
+.bloqueIngresaDireccion input{
+    border-radius: 15px;
+    border: 1px solid var(--second2-color);
+    padding: 3px 20px;
+    width: 100%;
+}
+.bloqueIngresaDireccion input::placeholder{
+    font-size: .8em;
+    font-style: italic;
+}
+
+.bloqueContinuarCompra{
+    background-image: url('../../BASE/img/4-barra-cantidad-compra.png');
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.bloqueContinuarCompra button.btnContinuarCompra{
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+  }
+  .bloqueContinuarCompra button{
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 700;
+    background-color: var(--primary2-color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    max-width: 250px;
+    max-height: 40px;
+  }
+  .bloqueContinuarCompra button.btnContinuarCompra::before{
+    content: 'CONTINUAR COMPRA';
+    font-family: Montserrat;
+    text-align: start;
+    font-weight: 600;
+  }
+  .bloqueContinuarCompra button.btnContinuarCompra::after{
+    content: 's/34.00';
+    font-size: 1.8em;
+    font-family: Montserrat;
+  }

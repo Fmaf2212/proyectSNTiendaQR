@@ -1,0 +1,117 @@
+.bloqueDetalleProducto{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.bloqueDetalleProducto .bloqueNombreProducto p{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+}
+.bloqueDetalleProducto .bloqueDescProducto p{
+    font-size: .7em;
+    text-align: justify;
+    color: var(--second-color);
+}
+.bloqueDetalleProducto .bloqueCostoProducto p{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--primary2-color);
+    margin: 0.4em 0;
+}
+
+.bloqueViasDeCompra{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px 25px;
+}
+.bloqueViasDeCompra .bloqueViaCompraCallCenter,
+.bloqueViasDeCompra .bloqueViaWsp{
+    display: flex;
+    gap: 7.5px;
+}
+.bloqueViasDeCompra .bloqueViaWsp{
+    justify-content: flex-end;
+}
+.bloqueViasDeCompra .bloqueViaCompraCallCenter img,
+.bloqueViasDeCompra .bloqueViaWsp img{
+    width: 15%;
+}
+.bloqueViasDeCompra .bloqueViaCompraCallCenter .bloqueInfoCallCenter,
+.bloqueViasDeCompra .bloqueViaWsp .bloqueInfoWsp{
+    font-size: 0.6em;
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bloqueViasDeCompra .bloqueViaCompraCallCenter .bloqueInfoCallCenter p,
+.bloqueViasDeCompra .bloqueViaWsp .bloqueInfoWsp p{
+    margin: 0;
+}
+
+
+.bloqueCantProductos{
+    background-image: url('../../BASE/img/4-barra-cantidad-compra.png');
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bloqueCantProductos .wrapper{
+    height: 40px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 20px;
+    color: var(--primary-color);
+  }
+  .bloqueCantProductos .wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 800;
+    cursor: pointer;
+    user-select: none;
+  }
+  .bloqueCantProductos .wrapper span.num{
+    font-size: 1.2em;
+    pointer-events: none;
+  }
+  .bloqueCantProductos .bloqueEnlace{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+  }
+  .bloqueCantProductos .bloqueEnlace button{
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 0.6em;
+    font-weight: 700;
+    background-color: var(--primary2-color);
+    padding: 8px 20px;
+    border-radius: 15px;
+    border: none;
+    max-width: 190px;
+    max-height: 27px;
+  }
+  .bloqueCantProductos .bloqueEnlace button.btnContinuarCompra{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+  .bloqueCantProductos .bloqueEnlace button.btnContinuarCompra::before{
+    content: 'CONTINUAR COMPRA';
+    font-family: Montserrat;
+    text-align: start;
+    font-weight: 600;
+  }
+  .bloqueCantProductos .bloqueEnlace button.btnContinuarCompra::after{
+    content: 's/34.00';
+    font-size: 1.8em;
+    font-family: Montserrat;
+  }

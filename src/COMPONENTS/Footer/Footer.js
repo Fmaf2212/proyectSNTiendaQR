@@ -1,6 +1,6 @@
 import React from 'react'
 
-import imgFooter from '../../BASE/img/imgFooter.png'
+import imgFooter from '../../BASE/img/5-fondo-slogan.png'
 
 import './footer.css'
 
