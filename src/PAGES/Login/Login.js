@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import './login.css'
 
 const Login = () => {
@@ -13,7 +15,9 @@ const Login = () => {
           <p>Constraseña<input></input></p>
         </div>
         <div className='bloqueRecuperarContraseña'>
-          <p>¿Has olvidado tu contraseña?</p>
+          <Link to="/RecuperarContra">
+            <p>¿Has olvidado tu contraseña?</p>
+          </Link>
         </div>
         <div className='bloqueButtonLogin'>
           <button>INICIAR SESIÓN</button>

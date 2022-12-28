@@ -36,7 +36,10 @@
 }
 
 
-.bloqueLogin form .bloqueRecuperarContraseña p{
+.bloqueLogin form .bloqueRecuperarContraseña a{
+    text-decoration: none;
+}
+.bloqueLogin form .bloqueRecuperarContraseña a p{
     color: var(--second-color);
     font-size: 0.7em;
     font-weight: 600;

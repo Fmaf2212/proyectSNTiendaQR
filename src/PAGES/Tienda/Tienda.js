@@ -9,6 +9,8 @@ import UbicacionPedido from '../../COMPONENTS/UbicacionPedido/UbicacionPedido'
 import TuCarrito from '../../COMPONENTS/TuCarrito/TuCarrito'
 import Footer from '../../COMPONENTS/Footer/Footer'
 import Login from '../Login/Login'
+import RecuperarContra from '../../COMPONENTS/RecuperarContra/RecuperarContra'
+import Registrarse from '../../COMPONENTS/Registrarse/Registrarse'
 
 import '../../BASE/styleGeneral.css'
 
@@ -17,7 +19,7 @@ const Tienda = () => {
 
   return (
     <div>
-      {location.pathname !== '/Login' && <Header />}
+      {(location.pathname !== '/Login' && location.pathname !== '/RecuperarContra' && location.pathname !== '/Registrarse') && <Header />}
 
       <Routes>
         <Route path="/" exact element={<ListadoProductos />} />
@@ -25,13 +27,15 @@ const Tienda = () => {
         <Route path="/UbicacionPedido" element={<UbicacionPedido />} />
         <Route path="/TuCarrito" element={<TuCarrito />} />
         <Route path="/Login" element={<Login/>} />
+        <Route path="/RecuperarContra" element={<RecuperarContra/>} />
+        <Route path="/Registrarse" element={<Registrarse/>} />
       </Routes>
       {/* <ListadoProductos /> */}
       {/* <DetalleProducto />
       <UbicacionPedido />
       <TuCarrito /> */}
 
-      {location.pathname !== '/Login' && <Footer />}
+      {(location.pathname !== '/Login') && <Footer />}
     </div>
   )
 }

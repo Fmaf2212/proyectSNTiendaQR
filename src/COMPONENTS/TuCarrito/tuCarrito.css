@@ -1,0 +1,230 @@
+.bloqueTuCarrito{
+    padding: 16px 20px;
+}
+.bloqueTuCarrito .bloqueTuCarrito__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bloqueTuCarrito .bloqueTuCarrito__top img{
+    width: 5%;
+    object-fit: contain;
+}
+.bloqueTuCarrito .bloqueTuCarrito__top h1{
+    margin: 0;
+    line-height: .8;
+    color: var(--primary2-color);
+}
+.bloqueTuCarrito .bloqueTuCarrito__top button{
+    border-radius: 10px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    font-family: Montserrat;
+    padding: 6px 7.5px 3px;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+.bloqueTuCarrito__listaProductosAñadidos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 10px;
+}
+
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTextoCantidadProductos p{
+    color: var(--primary2-color);
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos{
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid rgb(181, 179, 179);
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueImgProducto{
+    background-color: var(--primary-color);
+    border-radius: 15px 0 0 15px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueImgProducto{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueImgProducto img{
+    width: 100%;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    gap: 13px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto .bloqueInfoEliminar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto .bloqueInfoEliminar > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--primary2-color);
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto .bloqueInfoEliminar > div p{
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto .bloqueInfoEliminar > img{
+    width: 6%;
+    object-fit: contain;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto .bloqueWrapperCantProductos .wrapper{
+    height: 26px;
+    min-width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 20px;
+    color: var(--primary-color);
+    width: min-content;
+    border: 1px solid var(--second2-color);
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto .bloqueWrapperCantProductos .wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 800;
+    cursor: pointer;
+    user-select: none;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueInfoListaProductos .bloqueInfoCantidadProducto .bloqueWrapperCantProductos .wrapper span.num{
+    font-size: 1em;
+    pointer-events: none;
+}
+
+.bloqueTuCarrito__listaProductosAñadidos .bloqueLocalSeleccionado{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueLocalSeleccionado label{
+    color: var(--primary2-color);
+    font-weight: 600;
+    font-size: .7em;
+    padding: 0 15px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueLocalSeleccionado input{
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 8.5px 25px;
+    border: none;
+    width: 100%;
+    font-style: italic;
+    font-size: .7em;
+}
+
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTipoDeComprobante{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTipoDeComprobante select{
+    border: 1px solid var(--second-color);
+    border-radius: 20px;
+    outline: none;
+    padding: 6px 10px;
+    appearance: none;
+    background-image: url('../../BASE/img/3-botón-como-comprar.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTipoDeComprobante .bloqueIngreseRuc{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTipoDeComprobante .bloqueIngreseRuc input{
+    border: 1px solid var(--second-color);
+    border-radius: 20px;
+    outline: none;
+    padding: 7px 10px;
+    height: fit-content;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTipoDeComprobante .bloqueIngreseRuc button{
+    background-color: var(--primary2-color);
+    color: #fff;
+    padding: 9px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.7em;
+}
+
+.bloqueTuCarrito__listaProductosAñadidos .bloqueComentarios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueComentarios p{
+    color: var(--second-color);
+    font-size: 0.7em;
+    width: 90%;
+    line-height: 1.3;
+    margin: 12px 0 6px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueComentarios textarea {
+    border: 1px solid var(--second-color);
+    border-radius: 20px;
+    height: 70px;
+    resize: none;
+    padding: 6px 12px;
+    font-size: 0.8em;
+    outline: none;
+}
+
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTotalConfirmar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTotalConfirmar .bloqueSubTotal,
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTotalConfirmar .bloqueTotal{
+    color: var(--primary2-color);
+    font-size: .9em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+}
+/* .bloqueTuCarrito__listaProductosAñadidos .bloqueTotalConfirmar .bloqueSubTotal{
+    color: var(--primary2-color)
+} */
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTotalConfirmar .bloqueTotal span{
+    font-size: 1.6em;
+    font-weight: 800;
+}
+.bloqueTuCarrito__listaProductosAñadidos .bloqueTotalConfirmar .btnConfirmar{
+    color: #fff;
+    background-color: var(--primary2-color);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
